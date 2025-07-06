@@ -2,6 +2,8 @@
 
 A simple full-stack notes application built with Spring Boot for the backend (REST API) and vanilla HTML, CSS, and JavaScript for the frontend. This application allows users to register, log in, and perform CRUD (Create, Read, Update, Delete) operations on their personal notes.
 
+**Disclaimer:** This project is developed primarily for educational purposes, focusing on demonstrating fundamental concepts of Spring Boot, Spring Security, Spring Data JPA (Hibernate), and RESTful API design, along with basic frontend interaction (CRUD operations). It is not intended for production use as a secure or fully-featured note-taking application.
+
 ## Table of Contents
 
 -   [Features](#features)
