@@ -65,7 +65,6 @@ Before you begin, ensure you have the following installed:
     git clone github.com/danishq/note-app.git
     cd notes-app
     ```
-    *(Replace `<your-repository-url>` with the actual URL of your GitHub repository)*
 
 2.  **Configure Database:**
     Open `src/main/resources/application.properties` and update the database connection details:
@@ -78,7 +77,6 @@ Before you begin, ensure you have the following installed:
     spring.jpa.show-sql=true
     spring.jpa.properties.hibernate.format_sql=true
     ```
-    *Replace `your_db_username` and `your_db_password` with your PostgreSQL credentials.*
 
 3.  **Build and Run the Backend:**
     Navigate to the `notes-app` directory in your terminal and run:
