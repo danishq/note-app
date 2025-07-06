@@ -62,7 +62,7 @@ Before you begin, ensure you have the following installed:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
+    git clone <github.com/danishq/note-app.git>
     cd notes-app
     ```
     *(Replace `<your-repository-url>` with the actual URL of your GitHub repository)*
