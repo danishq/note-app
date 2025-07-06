@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .note-item {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .note-item div {
+            flex-grow: 1;
+        }
+        .note-item button {
+            margin-left: 10px;
+        }
+        #notes-list {
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Notes Application</h1>
+
+        <div id="auth-section">
+            <h2>Authentication</h2>
+            <div id="register-section">
+                <h3>Register</h3>
+                <input type="text" id="register-username" placeholder="Username">
+                <input type="password" id="register-password" placeholder="Password">
+                <button onclick="registerUser()">Register</button>
+                <div id="register-message" class="error"></div>
+            </div>
+            <div id="login-section" style="margin-top: 20px;">
+                <h3>Login</h3>
+                <input type="text" id="login-username" placeholder="Username">
+                <input type="password" id="login-password" placeholder="Password">
+                <button onclick="loginUser()">Login</button>
+                <button onclick="logoutUser()" class="hidden" id="logout-btn">Logout</button>
+                <div id="login-message" class="error"></div>
+            </div>
+        </div>
+
+        <div id="notes-section" class="hidden">
+            <h2>Your Notes</h2>
+            <div id="create-note-section">
+                <h3>Create New Note</h3>
+                <input type="text" id="note-title" placeholder="Note Title">
+                <textarea id="note-content" placeholder="Note Content"></textarea>
+                <button onclick="createNote()">Add Note</button>
+                <div id="create-note-message" class="error"></div>
+            </div>
+
+            <div id="notes-list">
+                <h3>All Notes</h3>
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
