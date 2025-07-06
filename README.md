@@ -14,7 +14,6 @@ A simple full-stack notes application built with Spring Boot for the backend (RE
 -   [Usage](#usage)
 -   [Authentication Note](#authentication-note)
 -   [Future Enhancements](#future-enhancements)
--   [License](#license)
 
 ## Features
 
@@ -149,8 +148,3 @@ This application currently uses **HTTP Basic Authentication**. This means your u
 * **Error Handling:** More user-friendly error messages and feedback.
 * **Pagination/Search:** For large numbers of notes.
 * **User Roles:** If different types of users are needed.
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE.md).
-*(You might need to create a `LICENSE.md` file in your root directory if you want to explicitly include a license.)*
